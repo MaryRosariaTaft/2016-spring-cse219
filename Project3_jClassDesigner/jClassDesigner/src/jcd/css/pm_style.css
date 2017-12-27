@@ -1,0 +1,50 @@
+/* 
+    This style sheet stylizes the controls inside our
+    jClass Designer JavaFX application. Note that controls
+    in the UI must have the same class as those below in 
+    order to be rendered using those properties.
+
+    Author:	Richard McKenna
+    Author:	Mary R. Taft
+    Version:	1.0
+*/
+
+.component_toolbar {
+    -fx-padding: 20px;
+    -fx-background-color: #FFC125;
+}
+
+.component_toolbar_row {
+    -fx-padding: 0px;
+    -fx-spacing: 10;
+    -fx-background-color: #ffdead;
+    -fx-background-radius: 5.0;
+    -fx-padding: 15;
+    -fx-spacing: 10;
+    -fx-border-width: 2px;
+    -fx-border-color: #d2b48c;
+}
+/* todo: css for updated application (jClass > pose) */
+/*
+.color_chooser_pane {
+    -fx-background-color:seashell;
+    -fx-padding: 0px;
+}
+
+.color_chooser_control {
+    -fx-font-weight:bold;
+    -fx-font-size:20;     
+}
+*/
+
+
+
+/* CSS CLASS FOR OUR BIG PANES */
+.bordered_pane {
+    -fx-background-color: #d3a460;
+    -fx-background-radius: 5.0;
+    -fx-padding: 15;
+    -fx-spacing: 10;
+    -fx-border-width: 2px;
+    -fx-border-color: #cd853f;
+}

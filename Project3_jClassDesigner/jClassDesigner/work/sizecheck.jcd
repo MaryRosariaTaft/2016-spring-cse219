@@ -1,0 +1,22 @@
+
+{
+    "classes_and_interfaces":[
+        {
+            "class_name":"DefaultClassName",
+            "package_name":"default",
+            "parent_name":"",
+            "variables":[
+            ],
+            "methods":[
+            ],
+            "type":"class",
+            "is_displayed":true,
+            "x":0.0,
+            "y":0.0,
+            "width":60,
+            "height":60
+        }
+    ],
+    "connectors":[
+    ]
+}

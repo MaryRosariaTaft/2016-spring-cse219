@@ -1,0 +1,77 @@
+package saf.components;
+
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
+
+/**
+ * This abstract class provides the structure for workspace components in
+ * our applications. Note that by doing so we make it possible
+ * for customly provided descendent classes to have their methods
+ * called from this framework.
+ * 
+ * @author Richard McKenna
+ * @author Mary R. Taft
+ * @version 1.0
+ */
+public abstract class AppWorkspaceComponent implements AppStyleArbiter {
+    // THIS IS THE WORKSPACE WHICH WILL BE DIFFERENT
+    // DEPENDING ON THE CUSTOM APP USING THIS FRAMEWORK
+    protected Pane workspace;
+    
+    // THIS DENOTES THAT THE USER HAS BEGUN WORKING AND
+    // SO THE WORKSPACE IS VISIBLE AND USABLE
+    protected boolean workspaceActivated;
+    
+    /**
+     * When called this function puts the workspace into the window,
+     * revealing the controls for editing work.
+     * 
+     * @param appPane The pane that contains all the controls in the
+     * entire application, including the file toolbar controls, which
+     * this framework manages, as well as the customly provided workspace,
+     * which would be different for each app.
+     */
+    public void activateWorkspace(BorderPane appPane) {
+        if (!workspaceActivated) {
+            // PUT THE WORKSPACE IN THE GUI
+            appPane.setCenter(workspace);
+            workspaceActivated = true;
+        }
+    }
+    
+    /**
+     * Mutator method for setting the custom workspace.
+     * 
+     * @param initWorkspace The workspace to set as the user
+     * interface's workspace.
+     */
+    public void setWorkspace(Pane initWorkspace) { 
+	workspace = initWorkspace; 
+    }
+    
+    /**
+     * Accessor method for getting the workspace.
+     * 
+     * @return The workspace pane for this app.
+     */
+    public Pane getWorkspace() { return workspace; }
+    
+    // THE DEFINITION OF THIS CLASS SHOULD BE PROVIDED
+    // BY THE CONCRETE WORKSPACE
+    public abstract void reloadWorkspace();
+    public abstract void processPhotoTool();
+    public abstract void processCodeTool();
+    public abstract void processSelectTool();
+    public abstract void processResizeTool();
+    public abstract void processAddClass();
+    public abstract void processAddInterface();
+    public abstract void processRemove();
+    public abstract void processUndo();
+    public abstract void processRedo();
+    public abstract void processZoomIn();
+    public abstract void processZoomOut();
+    public abstract void processGridToggle(boolean isSelected);
+    public abstract void processSnapToggle(boolean isSelected);
+    //todo/note: some things might have to be added in the other *componenet.java files, not this one
+    
+}
