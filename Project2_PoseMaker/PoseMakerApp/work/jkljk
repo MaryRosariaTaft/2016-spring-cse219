@@ -1,0 +1,16 @@
+
+{
+    "backgroundColor":"0xff0000ff",
+    "shapes":[
+        {
+            "type":"r",
+            "xpos":438.0,
+            "ypos":415.0,
+            "width":54.0,
+            "height":58.0,
+            "fill":"0xff7f50ff",
+            "stroke":"0x800080ff",
+            "strokeWidth":10.0
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+
+{
+    "backgroundColor":"0xff0000ff",
+    "shapes":[
+        {
+            "type":"r",
+            "xpos":368.0,
+            "ypos":352.0,
+            "width":84.0,
+            "height":113.0,
+            "fill":"0xff7f50ff",
+            "stroke":"0x800080ff",
+            "strokeWidth":10.0
+        },
+        {
+            "type":"e",
+            "xpos":562.0,
+            "ypos":314.0,
+            "radx":153.0,
+            "rady":105.0,
+            "fill":"0xff7f50ff",
+            "stroke":"0x800080ff",
+            "strokeWidth":10.0
+        }
+    ]
+}
